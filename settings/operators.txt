@@ -1,3 +1,4 @@
-selected keybind, toggle slideout keybind
+selected keybind, toggle slideout keybind, toggle slideout sleep (ms)
 ^Insert
-!Insert
+Insert
+300

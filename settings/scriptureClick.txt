@@ -1,5 +1,5 @@
 scripture, run?, x, y, wait(ms)
 1
-161
-399
-1000
+230
+392
+900
