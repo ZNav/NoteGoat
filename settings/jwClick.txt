@@ -1,0 +1,5 @@
+jw click, run?, x, y, wait(ms)
+1
+17
+236
+500

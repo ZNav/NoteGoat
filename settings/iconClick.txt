@@ -1,0 +1,5 @@
+wol icon, run?, x, y, wait(ms)
+1
+76
+166
+1000

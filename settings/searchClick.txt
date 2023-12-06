@@ -1,0 +1,5 @@
+search bar, run?, x, y, wait(ms)
+1
+631
+162
+500

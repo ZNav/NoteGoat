@@ -1,0 +1,3 @@
+selected keybind, toggle slideout keybind
+^Insert
+!Insert
