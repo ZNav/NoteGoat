@@ -1,0 +1,2 @@
+# NoteGoat
+to improve notetaking
