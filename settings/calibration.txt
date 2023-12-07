@@ -1,4 +1,4 @@
 toggle slideout open status, x, y, wait (ms)
 1350
 942
-300
+500

@@ -3,5 +3,5 @@ start keybind, end keybind, delete last key bool, input timeout(s), typing sleep
 \
 /
 1
-8
+T12
 900
