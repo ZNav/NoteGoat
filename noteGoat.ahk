@@ -11,7 +11,7 @@ IfExist, %I_Icon%
 
     ;global variables, soon to be pulled from .txt file then later editted from a gui
 global calibration := ["toggle slideout open status", 1350, 942, 300]
-global noteTypedInfo := ["start keybind, end keybind, delete last key bool, input timeout, typing sleep", "\","\","^\", 1, "8", 900]
+global noteTypedInfo := ["start keybind, end keybind, delete last key bool, input timeout, typing sleep", "\","\","^\", True, "T8", 900]
 global operators := ["selected keybind, toggle slideout keybind, toggle slideout sleep", "^Insert", "Insert", 300]
 global jwClick := ["jw click", 1,  17, 236, 500]
 global wolClick := ["wol click", 1, 22, 287, 0]
@@ -57,22 +57,21 @@ endFunction(){
 lookupInput(){
     ;sets hotkey to off so you dont run multiple instances
     Hotkey, % noteTypedInfo[2], Off
+    endVar := False
     endNote =  % noteTypedInfo[3]
     cancelNote = % noteTypedInfo[4]
     needDel =  % noteTypedInfo[5]
     timeout = % noteTypedInfo[6]
     ;take input until endkey pressed or timeout
-    Input , noteInput, V "T" . timeout, {%endNote%}{%cancelNote%}
+    Input , noteInput, V %timeout%, {%endNote%}{%cancelNote%}
     ;if pressed cancelNote don't do continue fn
     if(endVar = True){
-        msgbox, %cancelNote%
         Hotkey, % noteTypedInfo[2], On
-        endVar := False
         return
     }
     else{
         ;if the endkey is a char it will need deleted
-        if(needDel is ){
+        if(needDel = True and ErrorLevel != "Timeout"){
             send {BackSpace}
             }
         useWol(noteInput)
