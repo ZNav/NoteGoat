@@ -2,4 +2,4 @@ scripture, run?, x, y, wait(ms)
 1
 230
 392
-900
+100
