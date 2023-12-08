@@ -109,7 +109,7 @@ useWol(inputtedScripture){
 ;calibration click / reactive cursor
 mouseGo(){
     sleep % calibration[4]
-    clickNew(calibration[2], calibration[3], 0, 1)
+    clickNew(calibration[2], calibration[3], 0, True)
     return
 }
 
